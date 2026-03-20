@@ -1,35 +1,20 @@
 {
-<<<<<<< HEAD
   "name": "movie-finder-data",
-=======
-  "name": "express-server",
->>>>>>> 0877097fcc5c4e5bdff2e5338cad321dddcc38c3
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "test": "mocha test --exit"
-=======
-    "test": "mocha test --exit",
-    "start": "node server/index.js"
->>>>>>> 0877097fcc5c4e5bdff2e5338cad321dddcc38c3
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^0.16.2",
     "dotenv": "^17.3.1",
     "morgan": "^1.10.1"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.9.0",
-=======
-    "morgan": "^1.10.1"
-  },
-  "devDependencies": {
->>>>>>> 0877097fcc5c4e5bdff2e5338cad321dddcc38c3
     "chai": "^4.0.2",
     "chai-http": "^3.0.0",
     "express": "^4.22.1",

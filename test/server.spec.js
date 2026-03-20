@@ -1,6 +1,5 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-<<<<<<< HEAD
 const axios = require('axios');
 const mockAdapter = require('axios-mock-adapter');
 const app = require('../server/app');
@@ -47,17 +46,11 @@ mock
   .onGet('http://www.omdbapi.com/?apikey=8730e0e&t=baby%20driver')
   .replyOnce(withMovie(1))
 
-=======
-const topSpotsData = require('../server/data.json');
-const app = require('../server/app');
-
->>>>>>> 0877097fcc5c4e5bdff2e5338cad321dddcc38c3
 const expect = chai.expect;
 chai.use(chaiHttp);
 
 describe("server module", function() {
   this.timeout(6500);
-<<<<<<< HEAD
   it("GET /?i=tt3896198 responds with movie data", (done) => {
 	  chai.request(app)
       .get('/?i=tt3896198')
@@ -109,26 +102,6 @@ describe("server module", function() {
         expect(res).to.have.status(200);
         expect(err).to.be.null;
         expect(res.body.Title).to.equal('Baby Driver');
-=======
-  it("GET / responds with a 200 response code", (done) => {
-		chai.request(app)
-  		.get('/')
-  		.end((err, res) => {
-  			expect(res).to.have.status(200);
-  			expect(err).to.be.null;
-  			expect(res).to.be.html;
-  			done();
-  		})
-	});
-
-  it("GET /data responds with all top spots", (done) => {
-	  chai.request(app)
-      .get('/data')
-      .end((err, res) => {
-        expect(res).to.have.status(200);
-        expect(err).to.be.null;
-        expect(res.body).to.deep.equal(topSpotsData);
->>>>>>> 0877097fcc5c4e5bdff2e5338cad321dddcc38c3
         done();
     })
 	});
